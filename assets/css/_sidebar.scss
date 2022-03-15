@@ -1,0 +1,27 @@
+aside{
+  background: $green;
+  min-height: 100vh;
+  header{
+    margin: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+      background: transparent;
+      border: none;
+    }
+  }
+  main{
+    ul{
+      li{
+        display: flex;
+        align-items: center;
+        gap: 0 1rem;
+        padding: 1rem;
+        & + li{
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

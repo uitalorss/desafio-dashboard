@@ -1,0 +1,27 @@
+$green: #18C29C;
+$light-green: #8ED7C6;
+$dark-green: #084236;
+$gravish: #DCE4E3;
+
+@import 'reset';
+@import 'sidebar';
+@import 'dashboard';
+
+body{
+  background: $gravish;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  font-family: 'Poppins', sans-serif;
+  @media (max-width: 1080px){
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px){
+    font-size: 87.5%;
+  }
+
+  @media (max-width: 540px){
+    font-size: 75%;
+  }
+}
