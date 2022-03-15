@@ -1,15 +1,16 @@
 aside{
   background: $green;
   min-height: 100vh;
+  position: relative;
+  button{
+    background: transparent;
+    border: none;
+  }
   header{
     margin: 1.5rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    button{
-      background: transparent;
-      border: none;
-    }
   }
   main{
     ul{
@@ -22,6 +23,19 @@ aside{
           margin-top: 1rem;
         }
       }
+    }
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .logout{
+      background: $light-green;
+      padding: 1rem;
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 3fr 1fr;
     }
   }
 }
