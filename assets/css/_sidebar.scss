@@ -41,6 +41,9 @@ aside{
       display: grid;
       align-items: center;
       grid-template-columns: 1fr 3fr 1fr;
+      p{
+        font-size: 0.75rem;
+      }
     }
   }
 }
