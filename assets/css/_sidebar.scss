@@ -1,8 +1,11 @@
-aside{
+.sidebar{
   background: $green;
   min-height: 100vh;
-  position: relative;
-  button{
+  position: fixed;
+  width: 18rem;
+  transition: all 0.3s ease;
+
+    button{
     background: transparent;
     border: none;
   }
@@ -47,7 +50,7 @@ aside{
     }
   }
   &.responsive{
-    width: 30%;
+    width: 6rem;
     header{
       align-items: center;
       justify-content: center;
@@ -58,7 +61,7 @@ aside{
     main{
       li{
         justify-content: center;
-        h4{
+        span{
           display: none;
         }
       }

@@ -9,8 +9,6 @@ $gravish: #DCE4E3;
 body{
   background: $gravish;
   -webkit-font-smoothing: antialiased;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
   font-family: 'Poppins', sans-serif;
   @media (max-width: 1080px){
     font-size: 93.75%;
@@ -24,7 +22,11 @@ body{
     font-size: 75%;
   }
 
-  main{
+  .dashboard-area{
+    position: absolute;
+    height: 100%;
+    width: calc(100%-300px);
+    left: 300px;
     h1{
       font-size: 1.625rem;
       padding: 1.5rem;
