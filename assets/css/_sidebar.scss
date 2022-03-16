@@ -46,4 +46,28 @@ aside{
       }
     }
   }
+  &.responsive{
+    width: 30%;
+    header{
+      align-items: center;
+      justify-content: center;
+     img#logo{
+        display: none;
+      }
+    }
+    main{
+      li{
+        justify-content: center;
+        h4{
+          display: none;
+        }
+      }
+    }
+    .logout{
+      grid-template-columns: 1fr;
+      img#avatar, div{
+        display: none;
+      }
+    }
+  }
 }
