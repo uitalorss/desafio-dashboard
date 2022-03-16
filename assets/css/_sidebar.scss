@@ -18,15 +18,20 @@
   main{
     ul{
       li{
-        display: flex;
-        align-items: center;
-        gap: 0 1rem;
         padding: 1rem;
         margin: 0 1rem;
+        transition: .2s;
+        a{
+          display: flex;
+          align-items: center;
+          gap: 0 1rem;
+          text-decoration: none;
+          color: black;
+        }
         & + li{
           margin-top: 1rem;
         }
-        &.emphasis{
+        &:hover{
           background: $light-green;
           border-radius: 1rem;
         }
@@ -59,11 +64,8 @@
       }
     }
     main{
-      li{
-        justify-content: center;
-        span{
-          display: none;
-        }
+      span{
+        display: none;
       }
     }
     .logout{
