@@ -27,6 +27,7 @@ body{
     height: 100%;
     width: calc(100%-300px);
     left: 300px;
+    transition: .4s;
     h1{
       font-size: 1.625rem;
       padding: 1.5rem;

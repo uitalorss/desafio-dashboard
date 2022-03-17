@@ -54,7 +54,7 @@
       }
     }
   }
-  &.responsive{
+  &.active{
     width: 6rem;
     header{
       align-items: center;
@@ -63,9 +63,19 @@
         display: none;
       }
     }
+  &.active ~ .dashboard-area{
+    width: calc(100%-6rem);
+    left: 6rem;
+  }
     main{
-      span{
-        display: none;
+      a{
+        img{
+          display: block;
+          margin-left: .2rem;
+        }
+        span{
+          display: none;
+        }
       }
     }
     .logout{
